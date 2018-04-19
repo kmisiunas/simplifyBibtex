@@ -62,6 +62,7 @@ for line in open(in_file, "r"):
         keys = keys + stringToCitationList(cite)
 
 keys = np.unique(keys)
+keys = keys[keys != ""]
 
 print("found", len(keys), "unique citations. Eg: ",keys[0])
 
